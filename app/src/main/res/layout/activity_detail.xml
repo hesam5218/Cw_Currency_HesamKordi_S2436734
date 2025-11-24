@@ -1,0 +1,224 @@
+
+
+
+
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent">
+
+
+
+
+
+    <LinearLayout
+
+        android:orientation="vertical"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+
+        android:padding="16dp">
+
+
+
+
+        <TextView
+
+            android:id="@+id/titleView"
+
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+
+            android:textSize="20sp"
+
+            android:textStyle="bold" />
+
+
+
+
+        <TextView
+
+            android:id="@+id/descriptionView"
+
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+
+            android:paddingTop="10dp" />
+
+
+
+
+        <TextView
+
+            android:id="@+id/pubDateView"
+
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+
+            android:paddingTop="10dp" />
+
+
+
+        <TextView
+
+            android:id="@+id/linkView"
+
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+
+            android:paddingTop="10dp" />
+
+
+
+
+        <TextView
+
+            android:id="@+id/categoryView"
+
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+
+            android:paddingTop="10dp" />
+
+
+
+        <View
+
+
+            android:layout_width="match_parent"
+
+            android:layout_height="2dp"
+
+            android:background="#888"
+
+            android:layout_marginTop="20dp" />
+
+
+
+
+        <TextView
+
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+
+            android:text="Convert GBP to Currency:"
+
+            android:textSize="18sp"
+
+            android:layout_marginTop="20dp"/>
+
+
+
+
+        <EditText
+
+            android:id="@+id/gbpInput"
+
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+
+            android:hint="Enter amount in GBP"
+
+            android:inputType="numberDecimal" />
+
+
+
+        <Button
+
+            android:id="@+id/convertGbpBtn"
+
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+
+            android:text="Convert to Currency" />
+
+
+
+
+        <TextView
+
+            android:id="@+id/gbpResult"
+
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+
+            android:textSize="18sp"
+
+            android:layout_marginTop="10dp"/>
+
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+
+            android:text="Convert Currency to GBP:"
+
+            android:textSize="18sp"
+
+            android:layout_marginTop="20dp"/>
+
+
+
+
+
+        <EditText
+
+            android:id="@+id/currInput"
+
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+
+            android:hint="Enter amount in foreign currency"
+
+            android:inputType="numberDecimal" />
+
+
+
+
+
+        <Button
+
+            android:id="@+id/convertCurrBtn"
+
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+
+            android:text="Convert to GBP" />
+
+
+
+
+        <TextView
+
+            android:id="@+id/currResult"
+
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+
+            android:textSize="18sp"
+
+            android:layout_marginTop="10dp"/>
+
+
+
+    </LinearLayout>
+</ScrollView>

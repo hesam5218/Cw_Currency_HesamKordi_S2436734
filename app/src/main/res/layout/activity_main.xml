@@ -1,0 +1,186 @@
+
+
+
+<!--portrait-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:orientation="vertical"
+
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+
+    android:paddingLeft="16dp"
+
+    android:paddingRight="16dp"
+
+    android:paddingBottom="16dp"
+
+    android:paddingTop="32dp" >
+
+
+
+    <TextView
+
+        android:id="@+id/salutation"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+
+        android:textSize="20sp"
+
+        android:text="Currency Exchange App" />
+
+
+
+    <Button
+
+        android:id="@+id/startButton"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+
+        android:text="Press to get data" />
+
+
+
+    <TextView
+
+        android:id="@+id/acknowledgement"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+
+        android:textSize="20sp"
+
+        android:text="Contains Fx Currency Exchange data" />
+
+
+
+    <TextView
+
+        android:id="@+id/mainCurrenciesLabel"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="8dp"
+
+        android:text="Main currencies:"
+
+        android:textSize="16sp"
+
+        android:textStyle="bold" />
+
+
+
+    <LinearLayout
+
+        android:id="@+id/mainCurrenciesBar"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+
+        android:orientation="horizontal"
+
+        android:gravity="center"
+
+        android:layout_marginBottom="8dp">
+
+
+
+        <Button
+
+            android:id="@+id/btnMainUsd"
+
+            android:layout_width="0dp"
+
+            android:layout_height="wrap_content"
+
+            android:layout_weight="1"
+
+            android:text="USD" />
+
+
+
+
+        <Button
+
+            android:id="@+id/btnMainEur"
+
+            android:layout_width="0dp"
+
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="8dp"
+
+            android:layout_weight="1"
+
+            android:text="EUR" />
+
+
+
+
+        <Button
+
+            android:id="@+id/btnMainJpy"
+
+            android:layout_width="0dp"
+
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="8dp"
+
+            android:layout_weight="1"
+
+            android:text="JPY" />
+
+
+
+    </LinearLayout>
+
+
+    <EditText
+
+        android:id="@+id/searchBox"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+
+        android:hint="Search currency..."
+
+        android:padding="10dp"
+
+        android:layout_margin="10dp"
+
+        android:inputType="text"
+
+        android:background="@android:drawable/edit_text"
+
+        android:textColor="@android:color/black"
+
+        android:textColorHint="@android:color/darker_gray" />
+
+
+
+
+
+    <ListView
+
+        android:id="@+id/currencyListView"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="0dp"
+
+        android:layout_weight="1" />
+
+
+</LinearLayout>

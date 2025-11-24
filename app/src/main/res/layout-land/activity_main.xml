@@ -1,0 +1,233 @@
+
+
+<!--landscape-->
+
+
+
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:orientation="horizontal"
+
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+
+    android:paddingLeft="16dp"
+
+    android:paddingRight="16dp"
+
+    android:paddingBottom="16dp"
+
+    android:paddingTop="32dp">
+
+
+
+
+    <!--left-->
+
+    <LinearLayout
+
+        android:layout_width="0dp"
+
+        android:layout_height="match_parent"
+
+        android:layout_weight="1"
+        android:orientation="vertical"
+
+        android:paddingEnd="12dp">
+
+
+
+        <EditText
+
+            android:id="@+id/searchBox"
+
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+
+            android:hint="Search currency..."
+
+            android:padding="10dp"
+
+            android:layout_margin="10dp"
+
+            android:inputType="text"
+
+            android:background="@android:drawable/edit_text"
+
+
+            android:textColor="@android:color/black"
+
+            android:textColorHint="@android:color/darker_gray" />
+
+
+
+        <ListView
+
+            android:id="@+id/currencyListView"
+
+            android:layout_width="match_parent"
+
+            android:layout_height="0dp"
+
+            android:layout_weight="1" />
+
+
+    </LinearLayout>
+
+
+
+
+    <!--right-->
+
+    <LinearLayout
+
+        android:layout_width="0dp"
+
+        android:layout_height="match_parent"
+
+        android:layout_weight="1"
+
+        android:orientation="vertical"
+
+        android:paddingStart="24dp">
+
+
+
+        <TextView
+
+            android:id="@+id/salutation"
+
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+
+            android:textSize="26sp"
+
+            android:textStyle="bold"
+
+            android:text="Currency Exchange App" />
+
+
+
+        <Button
+
+            android:id="@+id/startButton"
+
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="20dp"
+
+            android:text="Press to get data" />
+
+
+
+        <TextView
+
+            android:id="@+id/acknowledgement"
+
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="20dp"
+
+            android:textSize="20sp"
+
+            android:text="Contains Fx Currency Exchange data" />
+
+
+
+        <TextView
+
+            android:id="@+id/mainCurrenciesLabel"
+
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="16dp"
+
+            android:text="Main currencies:"
+
+            android:textSize="18sp"
+
+            android:textStyle="bold" />
+
+
+
+
+        <LinearLayout
+
+            android:id="@+id/mainCurrenciesBar"
+
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+
+            android:orientation="horizontal"
+
+            android:gravity="center"
+
+            android:layout_marginTop="8dp">
+
+
+
+            <Button
+
+                android:id="@+id/btnMainUsd"
+
+                android:layout_width="0dp"
+
+                android:layout_height="wrap_content"
+
+                android:layout_weight="1"
+
+                android:text="USD" />
+
+
+
+
+
+            <Button
+
+                android:id="@+id/btnMainEur"
+
+
+                android:layout_width="0dp"
+
+                android:layout_height="wrap_content"
+
+                android:layout_marginStart="8dp"
+
+                android:layout_weight="1"
+
+                android:text="EUR" />
+
+
+
+            <Button
+
+                android:id="@+id/btnMainJpy"
+
+                android:layout_width="0dp"
+
+                android:layout_height="wrap_content"
+
+                android:layout_marginStart="8dp"
+
+                android:layout_weight="1"
+
+                android:text="JPY" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
